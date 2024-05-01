@@ -85,6 +85,15 @@
         }  
         nav2 ul li a:hover {  
             background-color: #111;  
+        } 
+        display: flex;  
+        } 
+        .flex-container {  
+            display: flex;  
+        }  
+          
+        .flex-item {  
+            flex: 1; /* 默认情况下，所有flex-item都会等分可用空间 */  
         }  
         footer {  
             background-color: #333;  
@@ -130,11 +139,20 @@
         <div id=section>
         <h2>机械设计基础（持续更新）</h2>  
         <h3>绪论</h3> 
+        <div class="flex-container">
+        <div class="flex-item">
         <p>基本概念<br />
         机器具有以下特征：<br />
         1)机器是各个实物的组合体<br />
         2)各个实物<br />
         3)机器能代替或减轻人类的劳动去完成有效机械功或能量转换</p>
+        </div>
+        <div class="flex-item">
+        <p>
+           既能实现确定的机械运动，又能做有用的机械功，或能传递或转换能量、物料、信息等。<br  />传统的机器：原动部分-->传动部分-->执行部分  
+        </p>   
+        </div>
+        </div>
         </div>
     </main>  
     <footer>  
