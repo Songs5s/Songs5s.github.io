@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* 输入信息页样式 */
+#Main .Main_Main .Main_Img2{ background:url(../image/process2.png) no-repeat;}
+#Main .Main_Main .Main_Input{ width:960px; border:#ddd 1px solid; margin:auto;margin-top:8px;background:rgb(255,255,255);}
+#Main .Main_Main .Main_Input .Input_top{ width:210px; margin:13px auto; text-align:center; }
+#Main .Main_Main .Main_Input .Input_divimg{ width:200px; height:150px; }
+#Main .Main_Main .Main_Input .Input_divimg .yulan{width:200px; height:50px; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);background:rgb(255,255,255);background:rgba(255,255,255,0.5); line-height:50px; font-size:24px; color:#000; font-family:幼圆; }
+#Main .Main_Main .Main_Input .Input_divimg{box-shadow: 0px 0px 10px #999; }
+#Main .Main_Main .Main_Input .Input_divspan{padding-top:10px;}
+#Main .Main_Main .Main_Input .Input_top:hover{opacity:0.9;}
+#Main .Main_Main .Main_Input .Input_divspan span{ background-color:#CCC;border-radius:3px; color:#FFF; padding:0px 4px;}
+#Main .Main_Main .Main_Input .Input_bottom{ width:580px; margin:auto;}
+#Main .Main_Main .Main_Input .Input_bottom p{ margin:10px 0px;}
+#Main .Main_Main .Main_Input .Input_bottom .inputts{color:#666; text-align:center;}
+#Main .Main_Main .Main_Input .Input_bottom p .redfh{ color:#F00; font-size:12px}
+#Main .Main_Main .Main_Input .Input_bottom p span{ font-size:16px; vertical-align:top; line-height:38px;}
+#Main .Main_Main .Main_Input .Input_bottom .anp{ text-align:center;}
+#Main .Main_Main .Main_Exp{width:960px; border:#ddd 1px solid; margin:auto;margin-top:8px;background:rgb(255,255,255);; padding:6px 0px 10px 0px;}
+#Main .Main_Main .Main_Exp .Exp_text{ width:500px; margin:auto}
+#Main .Main_Main .Main_Exp .Exp_text p,.Exp_text h1{ line-height:30px;}
+/* 输出结果页样式 */
+#Main .Main_Main .Main_Img3{ background:url(../image/process3.png) no-repeat;}
+#Main .Main_Main .Main_Res{width:960px; border:#ddd 1px solid; margin:auto;margin-top:8px;background:rgb(255,255,255);}
+#Main .Main_Main .Main_Res .Resbt{ margin:10px auto; height:64px; width:300px;}
+#Main .Main_Main .Main_Res .Resbt h1{ line-height:64px; font-size:24px; padding-left:74px;}
+#Main .Main_Main .Main_Res .Restext p{ text-align:center; }
+#Main .Main_Main .Main_Res .Restext p img{box-shadow: 0px 0px 8px #999;}
+#Main .Main_Main .Main_Res .Restext p span{font-size:18px;line-height:40px; }
+#Main .Main_Main .Main_Res .Restext p a{font-size:18px;line-height:40px;}
+#Main .Main_Main .Main_Res .Restext p .Rests{ font-size:12px; color:#666;}
+#Main .Main_Main .Main_Res .Restext .Resan{margin-bottom:20px;}
+/*留言页面样式*/
+#Main .Main_Main .Main_Text{width:960px; border:#ddd 1px solid; margin:auto;margin-top:20px;background: url(../image/embq.png) no-repeat rgb(255,255,255);}
+#Main .Main_Main .Main_Text h1{ font-size:24px; text-align:center; font-weight:100; line-height:60px;}
+#Main .Main_Main .Main_Text p{ text-align:center; line-height:40px; color:#333;}
+#Main .Main_Main .Main_Text span{ padding:10px;}
+#Main .Main_Main .Main_Mes{width:940px; border:#ddd 1px solid; margin:auto;margin-top:8px;background:rgba(255,255,255,0.9); padding:10px;}
+/*图片上传*/
+#Main .Main_Main .Main_Img_Text{width:960px; border:#ddd 1px solid; margin:auto;margin-top:20px;background: url(../image/imgurl.png) no-repeat rgb(255,255,255);}
+#Main .Main_Main .Main_Img_Text h1{ font-size:24px; text-align:center; font-weight:100; line-height:60px;}
+#Main .Main_Main .Main_Img_Text p{ text-align:center; line-height:40px; color:#333;}
+#Main .Main_Main .Main_Img_Text span{ padding:10px;}
+#Main .Main_Main .Main_Up{width:940px; border:#ddd 1px solid; margin:auto;margin-top:8px;background:rgba(255,255,255,0.9); padding:10px;}
+#Main .Main_Main .Main_Up iframe{min-height:400px; width:100%}
+/*音乐上传*/
+#Main .Main_Main .Main_Yy_Text{width:960px; border:#ddd 1px solid; margin:auto;margin-top:20px;background: url(../image/music.png) no-repeat rgb(255,255,255);}
+#Main .Main_Main .Main_Yy_Text h1{ font-size:24px; text-align:center; font-weight:100; line-height:60px;}
+#Main .Main_Main .Main_Yy_Text p{ text-align:center; line-height:40px; color:#333;}
+#Main .Main_Main .Main_Yy_Text span{ padding:10px;}
+#Main .Main_Main .Main_Url{width:940px; border:#ddd 1px solid; margin:auto;margin-top:8px;background:rgba(255,255,255,0.9); padding:10px;}
+#Main .Main_Main .Main_Url p{ text-align:center; }
+#Main .Main_Main .Main_Url iframe{ width:100%;}

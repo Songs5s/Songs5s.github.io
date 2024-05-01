@@ -1,0 +1,82 @@
+@charset "utf-8";
+/*首页流光效果*/
+
+/*父容器*/
+.Main_Tem > ul > li{
+	overflow: hidden;
+	position: relative; /*设置为相对*/
+}
+/*流光（采用伪类实现，当然也可以是子元素）*/
+.Main_Tem > ul > li:after {
+	content: '';
+	position: absolute; /*相对父级绝对定位*/
+	width: 80px;
+	height: 100%;
+	top: 0;
+	left: -200px;  /*起始位置*/
+	overflow: hidden;
+	z-index: 9;
+	/*背景渐变（兼容性写法）*/
+	background: -moz-linear-gradient(left, rgba(255,255,255,0) 0, rgba(255,255,255,.3) 50%, rgba(255,255,255,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(50%, rgba(255,255,255,.3)), color-stop(100%, rgba(255,255,255,0)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0, rgba(255,255,255,.3) 50%, rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0, rgba(255,255,255,.3)50%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(left, rgba(255,255,255,0) 0, rgba(255,255,255,.3) 50%, rgba(255,255,255,0) 100%);
+	-webkit-transform: skewX(-25deg);/*倾斜*/
+	-moz-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+/*鼠标滑过*/
+.Main_Tem > ul > li:hover:after {
+	-webkit-transition: left 1s ease-in-out; /*过渡*/
+	transition: left 1s ease-in-out;
+	left: 500px; /*结束位置*/
+}
+/*输入框特效*/
+.input {
+	height: 28px;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.input:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+/*按钮特效*/
+.an {
+	width: 200px;
+	height: 32px;
+	background: #069;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+.an:hover {
+	background: #0077b2;
+}
+
+/*数字滚动插件的CSS可调整样式*/
+.gundong{ width:312px; float:right;margin-right:70px;}
+.numberts{ float:right; line-height:30px; font-size:16px; }
+.numberts2{ float:right; line-height:30px;  font-size:16px; }
+.mt-number-animate{ font-family: '微软雅黑'; line-height:30px; height: 30px;/*设置数字显示高度*/; overflow: hidden; float:right;}
+.mt-number-animate .mt-number-animate-dot{ width: 15px;/*设置分割符宽度*/ line-height: 30px; float: left; text-align: center;}
+.mt-number-animate .mt-number-animate-dom{ width: 20px;/*设置单个数字宽度*/ text-align: center; float: left; position: relative; top: 0;}
+.mt-number-animate .mt-number-animate-dom .mt-number-animate-span{ width: 100%; float: left; font-size:16px; color:#060}
